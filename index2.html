@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
   <meta name="description" content="Research Study">
   <meta name="author" content="Thomas Sciano">
-
+  <link rel="icon" href="http://webcom.colostate.edu/alumline/files/2014/02/rams-icon-dark.png">
   <title>Research Study CSU CS 2018</title>
 
   <!-- Bootstrap core CSS -->
@@ -42,8 +42,12 @@
             <a class="nav-link js-scroll-trigger" href="#github">Github</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://www.cs.colostate.edu/~tsciano/test/parric.html">PARRIC</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
           </li>
+
         </ul>
       </div>
     </div>
@@ -111,289 +115,306 @@
               </tr>
               <tr class="table-info">
                 <th scope="row">4</th>
-                <td>Hi week 4</td>
                 <td>
-                  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#week4">Week 4 Summary</button>
-                    <div id="week4" class="collapse">
-                   <p >We analyzed the hardware design for our parallel bubble sort, and here were some of those numbers.</p>
-                  <ul>
-                    <li >
-                      <p >Case where N=P</p>
-                    </li>
-                    <ul>
-                      <li >
-                        <p >Last processor&rsquo;s first output = 2P+1</p>
-                      </li>
-                      <li >
-                        <p >First Processor is done(computing, but still may be holding number in out register) = N+1</p>
-                      </li>
-                      <li >
-                        <p >When is the last processor done= 3N == 3P</p>
-                      </li>
-                    </ul>
-                    <li >
-                      <p >Case where N &gt; P... introduce K = N/P</p>
-                    </li>
-                    <ul>
-                      <li >
-                        <p >First Output = 2P+1</p>
-                      </li>
-                      <li >
-                        <p >Last Processor done = 2P+N</p>
-                      </li>
-                    </ul>
-                    <li >
-                      <p >Putting it all together (+ or - 1)</p>
-                    </li>
-                    <ul>
-                      <li >
-                        <p >Cycles for ith processor done = N2/2P + N/2 +2i</p>
-                      </li>
-                      <li >
-                        <p >Cycles for last output appear = N2/2P + N/2 +2P +1</p>
-                      </li>
-                    </ul>
-                  </ul>
-                </div>
-                </div>
+                  <button type="button" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" data-target=".multi-collapse4" aria-controls="week4">Week 4</button>
+                  <div id="week4" class="collapse multi-collapse1"></td>
+                    <td>
+                      <div id="week4" class="collapse multi-collapse4">
+                        <p >We analyzed the hardware design for our parallel bubble sort, and here were some of those numbers.</p>
+                        <ul>
+                          <li >
+                            <p >Case where N=P</p>
+                          </li>
+                          <ul>
+                            <li >
+                              <p >Last processor&rsquo;s first output = 2P+1</p>
+                            </li>
+                            <li >
+                              <p >First Processor is done(computing, but still may be holding number in out register) = N+1</p>
+                            </li>
+                            <li >
+                              <p >When is the last processor done= 3N == 3P</p>
+                            </li>
+                          </ul>
+                          <li >
+                            <p >Case where N &gt; P... introduce K = N/P</p>
+                          </li>
+                          <ul>
+                            <li >
+                              <p >First Output = 2P+1</p>
+                            </li>
+                            <li >
+                              <p >Last Processor done = 2P+N</p>
+                            </li>
+                          </ul>
+                          <li >
+                            <p >Putting it all together (+ or - 1)</p>
+                          </li>
+                          <ul>
+                            <li >
+                              <p >Cycles for ith processor done = N2/2P + N/2 +2i</p>
+                            </li>
+                            <li >
+                              <p >Cycles for last output appear = N2/2P + N/2 +2P +1</p>
+                            </li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div>
 
-                </td>
-                <td>
-                  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#homework4">Week 4 Homework</button>
-                    <div id="homework4" class="collapse">
-                  <ol>
-                    <li >
-                      <p >CPU Architecture</p>
-                    </li>
-                    <ol style="list-style-type: lower-alpha;">
-                      <li >
-                        <p >Memory hierarchy</p>
-                      </li>
-                      <li >
-                        <p >Multiple Cores</p>
-                      </li>
-                      <li >
-                        <p >Fine Grain Parallelism</p>
-                      </li>
-                      <ol style="list-style-type: lower-roman;">
+                  </td>
+                  <td>
+                    <div id="week4" class="collapse multi-collapse4">
+                      <ol>
                         <li >
-                          <p >FMA</p>
+                          <p >CPU Architecture</p>
                         </li>
+                        <ol style="list-style-type: lower-alpha;">
+                          <li >
+                            <p >Memory hierarchy</p>
+                          </li>
+                          <li >
+                            <p >Multiple Cores</p>
+                          </li>
+                          <li >
+                            <p >Fine Grain Parallelism</p>
+                          </li>
+                          <ol style="list-style-type: lower-roman;">
+                            <li >
+                              <p >FMA</p>
+                            </li>
+                            <li >
+                              <p >Vector units</p>
+                            </li>
+                            <li >
+                              <p >SIMD</p>
+                            </li>
+                          </ol>
+                        </ol>
                         <li >
-                          <p >Vector units</p>
+                          <p >GPU Architecture</p>
                         </li>
+                        <ol style="list-style-type: lower-alpha;">
+                          <li >
+                            <p >Memory hierarchy</p>
+                          </li>
+                          <ol style="list-style-type: lower-roman;">
+                            <li >
+                              <p >Global Memory</p>
+                            </li>
+                            <li >
+                              <p >Shared Memory</p>
+                            </li>
+                          </ol>
+                          <li >
+                            <p >Coarse grain processor</p>
+                          </li>
+                          <ol style="list-style-type: lower-roman;">
+                            <li >
+                              <p >SM (streaming multiprocessors)</p>
+                            </li>
+                            <li >
+                              <p >CUDA cores</p>
+                            </li>
+                          </ol>
+                        </ol>
                         <li >
-                          <p >SIMD</p>
+                          <p >Algorithm</p>
                         </li>
+                        <ol style="list-style-type: lower-alpha;">
+                          <li >
+                            <p >Matrix multiply</p>
+                          </li>
+                        </ol>
                       </ol>
-                    </ol>
-                    <li >
-                      <p >GPU Architecture</p>
-                    </li>
-                    <ol style="list-style-type: lower-alpha;">
-                      <li >
-                        <p >Memory hierarchy</p>
-                      </li>
-                      <ol style="list-style-type: lower-roman;">
+                      <ul>
                         <li >
-                          <p >Global Memory</p>
+                          <p >Should investigate the &ldquo;fish machines&rdquo; when looking at examples for CPU/GPU</p>
                         </li>
-                        <li >
-                          <p >Shared Memory</p>
-                        </li>
-                      </ol>
-                      <li >
-                        <p >Coarse grain processor</p>
-                      </li>
-                      <ol style="list-style-type: lower-roman;">
-                        <li >
-                          <p >SM (streaming multiprocessors)</p>
-                        </li>
-                        <li >
-                          <p >CUDA cores</p>
-                        </li>
-                      </ol>
-                    </ol>
-                    <li >
-                      <p >Algorithm</p>
-                    </li>
-                    <ol style="list-style-type: lower-alpha;">
-                      <li >
-                        <p >Matrix multiply</p>
-                      </li>
-                    </ol>
-                  </ol>
-                  <ul>
-                    <li >
-                      <p >Should investigate the &ldquo;fish machines&rdquo; when looking at examples for CPU/GPU</p>
-                    </li>
-                    <ul>
-                      <li >
-                        <p >Intel Broadwell E516...</p>
-                      </li>
-                      <li >
-                        <p >NVIDIA GTX 1070 pascal</p>
-                      </li>
-                    </ul>
-                  </ul>
-                </div>
-                </div>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#reading4">Week 4 Reading</button>
-                    <div id="reading4" class="collapse">
-                  <p >Next time:</p>
-                  <p >We will be looking into the question, can you compile a program into a design like this</p>
-                  <ul>
-                    <li >
-                      <p >Silicon Compilation</p>
-                    </li>
-                    <ul>
-                      <li >
-                        <p >Algorithm -&gt; design</p>
-                      </li>
-                      <li >
-                        <p >Mapping circuits to parallel implimentations</p>
-                      </li>
-                    </ul>
-                  </ul>
-                  <p>&nbsp;</p>
-                </div>
-</div>
-                </td>
-              </tr>
-              <tr class="table-danger">
-                <th scope="row">5</th>
-                <td>
-                  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#week5">Week 5</button>
-                  <div id="week5" class="collapse">
-                <td>
-                  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#week5sum">Week 5 summary</button>
-                  <div id="week5" class="collapse">
-                  Heres an example of what we talked about today, lets just make this a long sentence so we can get a grasp of how the table will wor</td>
-</div>
-                <td>
-                  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#week5hw">Week 5 Homework</button>
-                  <div id="week5hw" class="collapse">
-                    Homework 5</td>
-</div>
-                <td>
-                  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#week5rl">Week 5 Reading</button>
-                  <div id="week5rl" class="collapse">
-                    reading list 5</td>
+                        <ul>
+                          <li >
+                            <p >Intel Broadwell E516...</p>
+                          </li>
+                          <li >
+                            <p >NVIDIA GTX 1070 pascal</p>
+                          </li>
+                        </ul>
+                      </ul>
+                    </div>
                   </div>
-              </tr>
-              <tr>
-                <th scope="row">6</th>
-                <td>Hi week 6</td>
-                <td>Heres an example of what we talked about today, lets just make this a long sentence so we can get a grasp of how the table will wor</td>
-                <td>Homework 6</td>
-                <td>reading list 6</td>
-              </tr>
-              <tr>
-                <th scope="row">7</th>
-                <td>Hi week 7</td>
-                <td>Heres an example of what we talked about today, lets just make this a long sentence so we can get a grasp of how the table will wor</td>
-                <td>Homework 7</td>
-                <td>reading list 7</td>
-              </tr>
-              <tr>
-                <th scope="row">8</th>
-                <td>lets make this longer to test the list
-                  <li>lets test a list</li>
-                  <li>lets test a list</li>
-                  <li>lets test a list</li>
                 </td>
-                <td>Heres an example of what we talked about today, lets just make this a long sentence so we can get a grasp of how the table will wor</td>
-                <td>Homework 8</td>
-                <td>reading list 8</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>About our project</h2>
-          <p class="lead">We will talk about our project here</p>
-          <ul>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-            <li>Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae,</li>
-            <li>doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="roster" class="bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Roster</h2>
-          <p class="lead">
-            <p> Kat Moore</p>
-            <p>Drew Boston</p>
-            <p>Luke Burford</p>
-            <p>Sean Thunquest </p>
-            <p> Susanna Kyler</p>
-            <p>Alexander Undy</p>
-            <p>Jess Cobb</p>
-            <p> Logan Relph</p>
-            <p> Shihao Huang</p>
-            <p> Thomas Sciano</p>
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="github">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Github Stuff</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto!
-            Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+                <td>
+                  <div id="week4" class="collapse multi-collapse4">
+                    <p >Next time:</p>
+                    <p >We will be looking into the question, can you compile a program into a design like this</p>
+                    <ul>
+                      <li >
+                        <p >Silicon Compilation</p>
+                      </li>
+                      <ul>
+                        <li >
+                          <p >Algorithm -&gt; design</p>
+                        </li>
+                        <li >
+                          <p >Mapping circuits to parallel implimentations</p>
+                        </li>
+                      </ul>
+                    </ul>
+                    <p>&nbsp;</p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="table-danger">
+              <th scope="row">5</th>
+              <td>
+                <button type="button" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" data-target=".multi-collapse5" aria-controls="week5">Week 5</button>
+                <div id="week5" class="collapse multi-collapse5"> </td>
+                </div>
+                <td>
+                  <div id="week5a" class="collapse multi-collapse5">
+                    Heres an example of what we talked about today, lets just make this a long sentence so we can get a grasp of how the table will work</td>
+                  </div>
+                  <td>
+                    <!-- <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#week5">Week 5</button> -->
+                    <div id="week5b" class="collapse multi-collapse5">
+                      <p>Consider the equation below that describes the triangular computation of the bubble sort:</p>
+                      <p>X[i,j] = max(X[i-1, j], Y[i,j-1])</p>
+                      <p>Y[i,j] = max(X[i-1, j], Y[i,j-1])</p>
+                      <p>There are the usual special boundary conditions: at j=0, the bottom input is taken from the input array a_i, and on the diagonal boundary (i.e., where i=j+1) the &ldquo;left&rdquo; input is actually the Y value from the &ldquo;southwest&rdquo; point. The output of the whole computation is the X output of the rightmost column, plus the Y output of the top vertex [n-1,n-2].</p>
+                      <p>Draw out the graph of this computation and then answer the following questions:</p>
+                      <ul>
+                        <li>What is the length of the longest path in the graph, and draw at least three distinct such paths.</li>
+                      </ul>
+                      <ul>
+                        <li>Consider a point/node [i,j] in the triangle. What is the length of the longest path in the graph that ends in [i,j].</li>
+                      </ul>
+                      <ul>
+                        <li>A &ldquo;schedule&rdquo; is a function that assigns a &ldquo;time-stamp&rdquo; to each node. The bottom left corner of the triangle, [1,0] is a &ldquo;source&rdquo; of the graph, all its incoming edges are inputs. So it can be given a time stamp of t=0. Follow the reasoning and determine a schedule for any arbitrary node [i,j], in the graph. Draw a red &ldquo;contour line&rdquo; connecting all the points that are scheduled at time step 5, and a blue line through all those at time step 6.</li>
+                      </ul>
+                      <ul>
+                        <li>[This one is hard] Can you prove or disprove the following statement: &ldquo;Every node in the graph is on at least one longest path.&rdquo;</li>
+                      </ul></td>
+                    </div>
+                    <td>
+                      <!-- <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#week5">Week 5</button> -->
+                      <div id="week5c" class="collapse multi-collapse5">
+                        reading list 5</td>
+                      </div>
+                    </tr>
+                    <tr>
+                      <th scope="row">6</th>
+                      <td>Hi week 6</td>
+                      <td><a href="https://i.imgur.com/1eaCpEg.jpg">Picture of What we talked about today</a> </td>
+                      <td>Homework 6
 
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Contact</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto!
-              Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+                      </td>
+                      <td>reading list 6</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">7</th>
+                      <td>Hi week 7</td>
+                      <td>Heres an example of what we talked about today, lets just make this a long sentence so we can get a grasp of how the table will wor</td>
+                      <td>Homework 7</td>
+                      <td>reading list 7</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">8</th>
+                      <td>lets make this longer to test the list
+                        <li>lets test a list</li>
+                        <li>lets test a list</li>
+                        <li>lets test a list</li>
+                      </td>
+                      <td>Heres an example of what we talked about today, lets just make this a long sentence so we can get a grasp of how the table will wor</td>
+                      <td>Homework 8</td>
+                      <td>reading list 8</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+        <section id="about">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <h2>About our project</h2>
+                <p class="lead">We will talk about our project here</p>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                  <li>Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae,</li>
+                  <li>doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="roster" class="bg-light">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <h2>Roster</h2>
+                <p class="lead">
+                  <p> Kat Moore</p>
+                  <p>Drew Boston</p>
+                  <p>Luke Burford</p>
+                  <p>Sean Thunquest </p>
+                  <p> Susanna Kyler</p>
+                  <p>Alexander Undy</p>
+                  <p>Jess Cobb</p>
+                  <p> Logan Relph</p>
+                  <p> Shihao Huang</p>
+                  <p> Thomas Sciano</p>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="github">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <h2>Github Stuff</h2>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto!
+                  Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+                </div>
+              </div>
+            </div>
+          </section>
 
-      <!-- Footer -->
-      <footer class="py-5 bg-dark">
-        <div class="container">
-          <p class="m-0 text-center text-white">Copyright &copy; CSU 2018</p>
-        </div>
-        <!-- /.container -->
-      </footer>
+          <section id="contact">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 mx-auto">
+                  <h2>Contact</h2>
+                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto!
+                    Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
 
-      <!-- Bootstrap core JavaScript -->
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <!-- Footer -->
+            <footer class="py-5 bg-dark">
+              <div class="container">
+                <p class="m-0 text-center text-white">Copyright &copy; CSU 2018</p>
+              </div>
+              <!-- /.container -->
+            </footer>
 
-      <!-- Plugin JavaScript -->
-      <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+            <!-- Bootstrap core JavaScript -->
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-      <!-- Custom JavaScript for this theme -->
-      <script src="js/scrolling-nav.js"></script>
+            <!-- Plugin JavaScript -->
+            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    </body>
+            <!-- Custom JavaScript for this theme -->
+            <script src="js/scrolling-nav.js"></script>
 
-    </html>
+          </body>
+
+          </html>

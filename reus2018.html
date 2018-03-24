@@ -65,378 +65,534 @@
 
 <section id="schedule">
   <div class="container">
-  <div class="table-responsive">
-    <table class="table table-bordered">
-      <div class="row">
-        <thead>
-          <tr>
-            <th scope="col">Week</th>
-            <th scope="col">Topic</th>
-            <th scope="col">Summary</th>
-            <th scope="col">Homework</th>
-            <th scope="col">Reading</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="table-success">
-            <th scope="row">1</th>
-            <td>Hi week 1 lets make this longer to test</td>
-            <td>Heres an example of what we talked about today, lets just make this a long sentence so we can get a grasp of how the table will work
-              <li>lets test a list</li>
-              <ul>
-                <li>lets test a list</li>
-                <li>lets test a list</li>
-                <ul>
-                  <li>lets test a list</li>
-                  <li>lets test a list</li>
-                </ul>
-              </ul>
-            </td>
-            <td>Homework 1, Lets make this a little longer so we can show what it looks like with more text
-              <li>lets test a list</li>
-              <li>lets test a list</li>
-              <li>lets test a list</li></td>
-              <td>Reading list 1, Lets make this a little longer so we can show what it looks like with more text
-                <li>lets test a list</li>
-                <li>lets test a list</li>
-                <li>lets test a list</li></td>
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <div class="row">
+          <thead>
+            <tr>
+              <th scope="col">Week</th>
+              <th scope="col">Topic</th>
+              <th scope="col">Summary</th>
+              <th scope="col">Homework</th>
+              <th scope="col">Reading</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-success">
+              <th scope="row">1</th>
+              <td>Hi week 1 </td>
+              <td>Summary
+              </td>
+              <td>Homework 1
+              </td>
+                <td>Reading list 1
+                </td>
 
-              </tr>
-              <tr class="table-active">
-                <th scope="row">2</th>
-                <td>Hi week 2</td>
-                <td>Heres an example of what we talked about today, lets just make this a long sentence so we can get a grasp of how the table will wor</td>
-                <td>Homework 2</td>
-                <td>reading list 2</td>
-              </tr>
-              <tr class="table-warning">
-                <th scope="row">3</th>
-                <td>Hi week 3</td>
-                <td>Heres an example of what we talked about today, lets just make this a long sentence so we can get a grasp of how the table will wor</td>
-                <td>Homework 3</td>
-                <td>reading list 3</td>
-              </tr>
-              <tr class="table-info">
-                <th scope="row">4</th>
-                <td>
-                  <button type="button" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" data-target=".multi-collapse4" aria-controls="week4">Week 4</button>
-                  <div id="week4" class="collapse multi-collapse1"></td>
+                </tr>
+                <tr class="table-active">
+                  <th scope="row">2</th>
+                  <td>Hi week 2</td>
+                  <td>Heres an example of what we talked about today, lets just make this a long sentence so we can get a grasp of how the table will wor</td>
+                  <td>Homework 2</td>
+                  <td>reading list 2</td>
+                </tr>
+                <tr class="table-warning">
+                  <th scope="row">3</th>
+                  <td>Hi week 3</td>
+                  <td>Heres an example of what we talked about today, lets just make this a long sentence so we can get a grasp of how the table will wor</td>
+                  <td>Homework 3</td>
+                  <td>reading list 3</td>
+                </tr>
+                <tr class="table-info">
+                  <th scope="row">4</th>
+                  <td>
+                    <button type="button" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" data-target=".multi-collapse4" aria-controls="week4">Week 4</button>
+                    <div id="week4" class="collapse multi-collapse1"></td>
+                      <td>
+                        <div id="week4" class="collapse multi-collapse4">
+                          <p >We analyzed the hardware design for our parallel bubble sort, and here were some of those numbers.</p>
+                          <ul>
+                            <li >
+                              <p >Case where N=P</p>
+                            </li>
+                            <ul>
+                              <li >
+                                <p >Last processor&rsquo;s first output = 2P+1</p>
+                              </li>
+                              <li >
+                                <p >First Processor is done(computing, but still may be holding number in out register) = N+1</p>
+                              </li>
+                              <li >
+                                <p >When is the last processor done= 3N == 3P</p>
+                              </li>
+                            </ul>
+                            <li >
+                              <p >Case where N &gt; P... introduce K = N/P</p>
+                            </li>
+                            <ul>
+                              <li >
+                                <p >First Output = 2P+1</p>
+                              </li>
+                              <li >
+                                <p >Last Processor done = 2P+N</p>
+                              </li>
+                            </ul>
+                            <li >
+                              <p >Putting it all together (+ or - 1)</p>
+                            </li>
+                            <ul>
+                              <li >
+                                <p >Cycles for ith processor done = N2/2P + N/2 +2i</p>
+                              </li>
+                              <li >
+                                <p >Cycles for last output appear = N2/2P + N/2 +2P +1</p>
+                              </li>
+                            </ul>
+                          </ul>
+                        </div>
+                      </div>
+
+                    </td>
                     <td>
                       <div id="week4" class="collapse multi-collapse4">
-                        <p >We analyzed the hardware design for our parallel bubble sort, and here were some of those numbers.</p>
+                        <ol>
+                          <li >
+                            <p >CPU Architecture</p>
+                          </li>
+                          <ol style="list-style-type: lower-alpha;">
+                            <li >
+                              <p >Memory hierarchy</p>
+                            </li>
+                            <li >
+                              <p >Multiple Cores</p>
+                            </li>
+                            <li >
+                              <p >Fine Grain Parallelism</p>
+                            </li>
+                            <ol style="list-style-type: lower-roman;">
+                              <li >
+                                <p >FMA</p>
+                              </li>
+                              <li >
+                                <p >Vector units</p>
+                              </li>
+                              <li >
+                                <p >SIMD</p>
+                              </li>
+                            </ol>
+                          </ol>
+                          <li >
+                            <p >GPU Architecture</p>
+                          </li>
+                          <ol style="list-style-type: lower-alpha;">
+                            <li >
+                              <p >Memory hierarchy</p>
+                            </li>
+                            <ol style="list-style-type: lower-roman;">
+                              <li >
+                                <p >Global Memory</p>
+                              </li>
+                              <li >
+                                <p >Shared Memory</p>
+                              </li>
+                            </ol>
+                            <li >
+                              <p >Coarse grain processor</p>
+                            </li>
+                            <ol style="list-style-type: lower-roman;">
+                              <li >
+                                <p >SM (streaming multiprocessors)</p>
+                              </li>
+                              <li >
+                                <p >CUDA cores</p>
+                              </li>
+                            </ol>
+                          </ol>
+                          <li >
+                            <p >Algorithm</p>
+                          </li>
+                          <ol style="list-style-type: lower-alpha;">
+                            <li >
+                              <p >Matrix multiply</p>
+                            </li>
+                          </ol>
+                        </ol>
                         <ul>
                           <li >
-                            <p >Case where N=P</p>
+                            <p >Should investigate the &ldquo;fish machines&rdquo; when looking at examples for CPU/GPU</p>
                           </li>
                           <ul>
                             <li >
-                              <p >Last processor&rsquo;s first output = 2P+1</p>
+                              <p >Intel Broadwell E516...</p>
                             </li>
                             <li >
-                              <p >First Processor is done(computing, but still may be holding number in out register) = N+1</p>
-                            </li>
-                            <li >
-                              <p >When is the last processor done= 3N == 3P</p>
-                            </li>
-                          </ul>
-                          <li >
-                            <p >Case where N &gt; P... introduce K = N/P</p>
-                          </li>
-                          <ul>
-                            <li >
-                              <p >First Output = 2P+1</p>
-                            </li>
-                            <li >
-                              <p >Last Processor done = 2P+N</p>
-                            </li>
-                          </ul>
-                          <li >
-                            <p >Putting it all together (+ or - 1)</p>
-                          </li>
-                          <ul>
-                            <li >
-                              <p >Cycles for ith processor done = N2/2P + N/2 +2i</p>
-                            </li>
-                            <li >
-                              <p >Cycles for last output appear = N2/2P + N/2 +2P +1</p>
+                              <p >NVIDIA GTX 1070 pascal</p>
                             </li>
                           </ul>
                         </ul>
                       </div>
                     </div>
-
                   </td>
                   <td>
                     <div id="week4" class="collapse multi-collapse4">
-                      <ol>
-                        <li >
-                          <p >CPU Architecture</p>
-                        </li>
-                        <ol style="list-style-type: lower-alpha;">
-                          <li >
-                            <p >Memory hierarchy</p>
-                          </li>
-                          <li >
-                            <p >Multiple Cores</p>
-                          </li>
-                          <li >
-                            <p >Fine Grain Parallelism</p>
-                          </li>
-                          <ol style="list-style-type: lower-roman;">
-                            <li >
-                              <p >FMA</p>
-                            </li>
-                            <li >
-                              <p >Vector units</p>
-                            </li>
-                            <li >
-                              <p >SIMD</p>
-                            </li>
-                          </ol>
-                        </ol>
-                        <li >
-                          <p >GPU Architecture</p>
-                        </li>
-                        <ol style="list-style-type: lower-alpha;">
-                          <li >
-                            <p >Memory hierarchy</p>
-                          </li>
-                          <ol style="list-style-type: lower-roman;">
-                            <li >
-                              <p >Global Memory</p>
-                            </li>
-                            <li >
-                              <p >Shared Memory</p>
-                            </li>
-                          </ol>
-                          <li >
-                            <p >Coarse grain processor</p>
-                          </li>
-                          <ol style="list-style-type: lower-roman;">
-                            <li >
-                              <p >SM (streaming multiprocessors)</p>
-                            </li>
-                            <li >
-                              <p >CUDA cores</p>
-                            </li>
-                          </ol>
-                        </ol>
-                        <li >
-                          <p >Algorithm</p>
-                        </li>
-                        <ol style="list-style-type: lower-alpha;">
-                          <li >
-                            <p >Matrix multiply</p>
-                          </li>
-                        </ol>
-                      </ol>
+                      <p >Next time:</p>
+                      <p >We will be looking into the question, can you compile a program into a design like this</p>
                       <ul>
                         <li >
-                          <p >Should investigate the &ldquo;fish machines&rdquo; when looking at examples for CPU/GPU</p>
+                          <p >Silicon Compilation</p>
                         </li>
                         <ul>
                           <li >
-                            <p >Intel Broadwell E516...</p>
+                            <p >Algorithm -&gt; design</p>
                           </li>
                           <li >
-                            <p >NVIDIA GTX 1070 pascal</p>
+                            <p >Mapping circuits to parallel implimentations</p>
                           </li>
                         </ul>
                       </ul>
+                      <p>&nbsp;</p>
                     </div>
                   </div>
                 </td>
+              </tr>
+              <tr class="table-danger">
+                <th scope="row">5</th>
                 <td>
-                  <div id="week4" class="collapse multi-collapse4">
-                    <p >Next time:</p>
-                    <p >We will be looking into the question, can you compile a program into a design like this</p>
-                    <ul>
-                      <li >
-                        <p >Silicon Compilation</p>
-                      </li>
-                      <ul>
-                        <li >
-                          <p >Algorithm -&gt; design</p>
-                        </li>
-                        <li >
-                          <p >Mapping circuits to parallel implimentations</p>
-                        </li>
-                      </ul>
-                    </ul>
-                    <p>&nbsp;</p>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr class="table-danger">
-              <th scope="row">5</th>
-              <td>
-                <button type="button" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" data-target=".multi-collapse5" aria-controls="week5">Week 5</button>
-                <div id="week5" class="collapse multi-collapse5"> </td>
-                </div>
-                <td>
-                  <div id="week5a" class="collapse multi-collapse5">
-                    Heres an example of what we talked about today, lets just make this a long sentence so we can get a grasp of how the table will work</td>
+                  <button type="button" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" data-target=".multi-collapse5" aria-controls="week5">Week 5</button>
+                  <div id="week5" class="collapse multi-collapse5"> </td>
                   </div>
                   <td>
-                    <!-- <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#week5">Week 5</button> -->
-                    <div id="week5b" class="collapse multi-collapse5">
-                      <p>Consider the equation below that describes the triangular computation of the bubble sort:</p>
-                      <p>X[i,j] = max(X[i-1, j], Y[i,j-1])</p>
-                      <p>Y[i,j] = max(X[i-1, j], Y[i,j-1])</p>
-                      <p>There are the usual special boundary conditions: at j=0, the bottom input is taken from the input array a_i, and on the diagonal boundary (i.e., where i=j+1) the &ldquo;left&rdquo; input is actually the Y value from the &ldquo;southwest&rdquo; point. The output of the whole computation is the X output of the rightmost column, plus the Y output of the top vertex [n-1,n-2].</p>
-                      <p>Draw out the graph of this computation and then answer the following questions:</p>
-                      <ul>
-                        <li>What is the length of the longest path in the graph, and draw at least three distinct such paths.</li>
-                      </ul>
-                      <ul>
-                        <li>Consider a point/node [i,j] in the triangle. What is the length of the longest path in the graph that ends in [i,j].</li>
-                      </ul>
-                      <ul>
-                        <li>A &ldquo;schedule&rdquo; is a function that assigns a &ldquo;time-stamp&rdquo; to each node. The bottom left corner of the triangle, [1,0] is a &ldquo;source&rdquo; of the graph, all its incoming edges are inputs. So it can be given a time stamp of t=0. Follow the reasoning and determine a schedule for any arbitrary node [i,j], in the graph. Draw a red &ldquo;contour line&rdquo; connecting all the points that are scheduled at time step 5, and a blue line through all those at time step 6.</li>
-                      </ul>
-                      <ul>
-                        <li>[This one is hard] Can you prove or disprove the following statement: &ldquo;Every node in the graph is on at least one longest path.&rdquo;</li>
-                      </ul></td>
+                    <div id="week5a" class="collapse multi-collapse5">
+                      Heres an example of what we talked about today, lets just make this a long sentence so we can get a grasp of how the table will work</td>
                     </div>
                     <td>
                       <!-- <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#week5">Week 5</button> -->
-                      <div id="week5c" class="collapse multi-collapse5">
-                        reading list 5</td>
+                      <div id="week5b" class="collapse multi-collapse5">
+                        <p>Consider the equation below that describes the triangular computation of the bubble sort:</p>
+                        <p>X[i,j] = max(X[i-1, j], Y[i,j-1])</p>
+                        <p>Y[i,j] = max(X[i-1, j], Y[i,j-1])</p>
+                        <p>There are the usual special boundary conditions: at j=0, the bottom input is taken from the input array a_i, and on the diagonal boundary (i.e., where i=j+1) the &ldquo;left&rdquo; input is actually the Y value from the &ldquo;southwest&rdquo; point. The output of the whole computation is the X output of the rightmost column, plus the Y output of the top vertex [n-1,n-2].</p>
+                        <p>Draw out the graph of this computation and then answer the following questions:</p>
+                        <ul>
+                          <li>What is the length of the longest path in the graph, and draw at least three distinct such paths.</li>
+                        </ul>
+                        <ul>
+                          <li>Consider a point/node [i,j] in the triangle. What is the length of the longest path in the graph that ends in [i,j].</li>
+                        </ul>
+                        <ul>
+                          <li>A &ldquo;schedule&rdquo; is a function that assigns a &ldquo;time-stamp&rdquo; to each node. The bottom left corner of the triangle, [1,0] is a &ldquo;source&rdquo; of the graph, all its incoming edges are inputs. So it can be given a time stamp of t=0. Follow the reasoning and determine a schedule for any arbitrary node [i,j], in the graph. Draw a red &ldquo;contour line&rdquo; connecting all the points that are scheduled at time step 5, and a blue line through all those at time step 6.</li>
+                        </ul>
+                        <ul>
+                          <li>[This one is hard] Can you prove or disprove the following statement: &ldquo;Every node in the graph is on at least one longest path.&rdquo;</li>
+                        </ul></td>
                       </div>
-                    </tr>
-                    <tr>
-                      <tr class="table-success">
-                      <th scope="row">6</th>
+                      <td>
+                        <!-- <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#week5">Week 5</button> -->
+                        <div id="week5c" class="collapse multi-collapse5">
+                          reading list 5</td>
+                        </div>
+                      </tr>
+                      <tr>
+                        <tr class="table-success">
+                          <th scope="row">6</th>
 
-                      <td><button type="button" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" data-target=".multi-collapse6" aria-controls="week6">Week 6</button>
-                      <div id="week6" class="collapse multi-collapse6"></td>
+                          <td><button type="button" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" data-target=".multi-collapse6" aria-controls="week6">Week 6</button>
+                            <div id="week6" class="collapse multi-collapse6"></td>
+                            </div>
+
+                            <td>
+                              <div id="week6" class="collapse multi-collapse6">
+                                <a href="https://i.imgur.com/1eaCpEg.jpg">Picture of What we talked about today</a> </td>
+                              </div>
+
+                              <td><div id="week6" class="collapse multi-collapse6">
+                                <p>Task 1: Kat Moore katbrown@rams.colostate.edu<br /> Task 2: Drew Boston dboston1@rams.colostate.edu<br /> Task 3: Luke Burford lburford@rams.colostate.edu<br /> Task 4: Logan Relph relphlogan@yahoo.com<br /> Task 5: Susanna Kyler susannaK@rams.colostate.edu<br /> Task 6: Alexander Undy dudeax@rams.colostate.edu<br /> Task 7: Jess Cobb jesscobb@rams.colostate.edu<br /> Task 8: Dakota Stewart dss@rams.colostate.edu<br /> Task 9: Thomas Sciano tsciano@rams.colostate.edu<br /> Task 10: Brian Pina-Estreda pinab@rams.colostate.edu<br /> Task 11: Shihao Huang strategicfoolyou@gmail.com<br /> Task 12: Sean Thunquest sthunquest@gmail.com</p>
+                                <br>
+                                <p>90 mins: [Hands On] With a partner of your choice, install the roofline toolkit, and gather the parameters and roofline plot for (i) one of the department machines in CSB 325 (named after fish, see&nbsp;<a href="http://www.cs.colostate.edu/~info/machines" target="_blank" rel="noreferrer" data-saferedirecturl="=http://www.cs.colostate.edu/~info/machines&amp;source=gmail&amp;ust=1519316148842000&amp;usg=AFQjCNHRyPDyvwaLS9wiMly1A-H9UcKVCg">http://www.cs.colostate.edu/~<wbr />info/machines</a>). Swetha and/or Corentin will send out specific instructions later this week.<br /><br />30 mins: Go back and reread the paper [it would be best to do it after sleeping on it]. This time read up the other tasks (don&rsquo;t try to do them, though), and get a better understanding of the paper. It will prep you<span tabindex="0" data-term="goog_1034975440">&nbsp;for t</span>he discussion for Friday.</p>
+                                <br>
+                                <p><a href="https://crd.lbl.gov/departments/computer-science/PAR/research/roofline/">Roofline Toolkit Software</a></p>
+                              </td>
+                            </div>
+
+                            <td>
+                              <div id="week6" class="collapse multi-collapse6">
+                                <a href="RooflineCACM2009.pdf">Roofline: An Insightful Visual Performance Model for Multicore Architectures</a>
+                              </td>
+                            </div>
+                          </tr>
+                          <tr class="table-warning">
+                            <th scope="row">7</th>
+
+                            <td><button type="button" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" data-target=".multi-collapse7" aria-controls="week7">Week 7</button>
+                              <div id="week7" class="collapse multi-collapse7"></td>
+                              </div>
+
+                              <td>
+                                <div id="week7" class="collapse multi-collapse7">
+                                  <p><strong>CS295 - Week 7 Notes </strong>(Jess Cobb)</p>
+                                  <ol>
+                                    <li>GFLOPS calculation : CPU and GPU</li>
+                                  </ol>
+                                  <p>115 GFLOPS/sec &ndash; theoretical? (CPU), 90 GFLOPS/sec &ndash; practical? (CPU)</p>
+                                  <p>visit <a href="http://www.cs.colostate.edu/~info/cuda-faq.html">www.cs.colostate.edu/~info/cuda-faq.html</a></p>
+                                  <p>Dimensional Analysis &rarr; <strong>GFLOPS/sec</strong> = <strong>flops/cycle</strong> x <strong>cycles/sec</strong> x <strong>cores</strong> x <strong>sockets</strong> we know: flops/cycle; frequency (cycles/sec); # cores; # sockets</p>
+                                  <p>Numerical Application &rarr; flops/cycle (operations per cycle) = either 4x4x2 for DP per core or 4x8x2 for SP per core; # cores = 6; # sockets = 1; frequency = 3.6 GHz</p>
+                                  <p>Double Precision (DP) &rarr; 64 bits, 8 byte (for operations on doubles)</p>
+                                  <p>Single Precision (SP) &rarr; 32 bits, 4 byte (for operations on integers)</p>
+                                  <p>AVX2 256bit data/8 &rarr; 32 bytes &rarr; DP (4(ALUs per core)x4) / SP(4x8)</p>
+                                  <p>FMA 32 bytes &rarr; DP(4x4)/SP(4x8)</p>
+                                  <ul>
+                                    <li>should be same number of ops. performed each cycle because of pipelining</li>
+                                    <li>improving performance involves hiding latency of a program</li>
+                                  </ul>
+                                  <p>Theoretical = 345.6 GFLOPS/sec</p>
+                                  <ol>
+                                    <li>Gbytes calculation : CPU and GPU cat /proc/cpuinfo</li>
+                                  </ol>
+                                  <p>/proc/meminfo</p>
+                                  <p>dmidecode &rarr; all three are options to find out info. computer internals</p>
+                                  <p>Memory in fish machines: DDR4 2400; 2400 is frequency (MHz)</p>
+                                  <p>- also need to know # occupied RAM slots and bandwidth (i.e. bytes/transfer and == 8)</p>
+                                  <p><strong>Gbytes/s </strong>=<strong> frequency </strong>x<strong> # slots </strong>x<strong> bandwidth </strong>&rarr; 2.4 x 4 x 8 = 76.8 Gbytes/s, then divided by 2because fish machines have 2 slots filled</p>
+                                  <p>Broadwell microarchitecture states max. slot # is 4</p>
+                                  <p>Performing Roofline again:</p>
+                                  <ol>
+                                    <li>Visit <a href="http://www.cs.colostate.edu/~info/cuda-faq.html">www.cs.colostate.edu/~info/cuda-faq.html</a></li>
+                                  </ol>
+                                  <ol>
+                                    <li>Use config.titan.ocs.ornl.gov.02</li>
+                                  </ol>
+                                  <ol>
+                                    <li>Replace CC by g++</li>
+                                  </ol>
+                                  <ol>
+                                    <li>Add ERT_LDFLAGS -L/usr/local/cuda/lib64 -lcudart -L for linker</li>
+                                  </ol>
+                                  <p><br /><br /></p>
+                                  <ol start="3">
+                                    <li>OpenMP and Tiling</li>
+                                  </ol>
+                                  <p>Hands on: see either CS475 F17 Lab1 or CS475 F16 Lab1 &amp; Lab2</p>
+                                  <p>#pragma omp parallel &hellip; (in mandelbrot.c) &ndash; distributes workload over cores using a for loop, workload is distributed based on N divided by # cores</p>
+                                  <ul>
+                                    <li>this causes the i value of the for loop between each processor to be different &rarr; private thread variables</li>
+                                  </ul>
+                                  <ul>
+                                    <li>by default the first loop&rsquo;s variable is private but can specify to be &ldquo;shared&rdquo;</li>
+                                  </ul>
+                                  <ul>
+                                    <li>dynamic and static scheduling &rarr; no idle processors with dynamic scheduling</li>
+                                  </ul>
+                                </td>
+                              </div>
+
+                              <td><div id="week7" class="collapse multi-collapse7">
+                                <p> Homework</p>
+                              </td>
+                            </div>
+
+                            <td>
+                              <div id="week7" class="collapse multi-collapse7">
+                                <a href="Week7Notes.pdf">Week 7 Notes</a>
+                                <p></p>
+                              <a href="Week7Notes.pdf  http://spscicomp.org/wordpress/wp-content/uploads/2015/05/Ashley-John-Part-3-GPU-Accelerated-Performance-Tuning-ScicomP-2015.pdf"> GPU Slides</a>
+                              </td>
+                            </div>
+                          </tr>
+                          <tr>
+                            <tr class="table-info">
+                              <th scope="row">8</th>
+
+                              <td><button type="button" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" data-target=".multi-collapse8" aria-controls="week8">Week 8</button>
+                                <div id="week8" class="collapse multi-collapse8"></td>
+                                </div>
+
+                                <td>
+                                  <div id="week8" class="collapse multi-collapse8">
+                                    <p>See GPU Optimization Fundamentals slides &ndash; Cliff Woodley</p>
+                                    <p>Separate into GPU, CPU, and FPGA groups in the coming weeks</p>
+                                    <p><strong>GPUs</strong></p>
+                                    <p>__global__ tells system to run program on GPU</p>
+                                    <ul>
+                                      <li>for CUDA loop version, array transformed into 1D &rarr; array access easier to see when 1D and using</li>
+                                    </ul>
+                                    <p>CUDA</p>
+                                    <ul>
+                                      <li>threads inside a thread block can share some data between them</li>
+                                      <li>a thread block is mapped to a multiprocessor</li>
+                                    </ul>
+                                    <ul>
+                                      <li>large register file on GPU, small cache</li>
+                                    </ul>
+                                    <ul>
+                                      <li>cache-line &rarr; a block of data that is prefetched by the hardware; requesting processor can now be viewed as a thread</li>
+                                    </ul>
+                                    <ul>
+                                      <li>GPUs are memory bound because of the very small amount of storage space</li>
+                                    </ul>
+                                    <ul>
+                                      <li>transpose&lt;&lt;a,b&gt;&gt;(in, out, N); (code for CUDA)</li>
+                                    </ul>
+                                    <p>a,b &rarr; number of threads running on GPU and how they are organized</p>
+                                    <ul>
+                                      <li>each thread is a copy of another thread</li>
+                                    </ul>
+                                    <ul>
+                                      <li>threadIDs and blockIDs are needed to differentiate threads and blocks from one another since they may be running the exact same code</li>
+                                    </ul>
+                                    <ul>
+                                      <li>there will be N-squared threads running in parallel</li>
+                                    </ul>
+                                    <ul>
+                                      <li>A[i][j] can also be accessed as 1D array &rarr; B[i*j]</li>
+                                    </ul>
+                                    <p><br /><br /></p>
+                                    <p><strong>Roofline</strong></p>
+                                    <p>- 1 IPC (instruction count) because only 1 FP (floating point) unit in the Nvidia chip</p>
+                                    <p><strong>128 cores/processors </strong>x<strong> 10 processors </strong>x<strong> 1 IPC </strong>x<strong> 1.86 cycles/sec </strong>= 238.0 Gflops/sdeviceQuery &rarr; Gbytes/sec = 192.18 GB/sec for i</p>
+                                    <p>for k</p>
+                                    <p>for j</p>
+                                    <p>x-axis = Flops/byte &rarr; Flops/byte = C[i][j] += A[i][k] * B[i][k] + B[j][k] * A[j][k]</p>
+                                    <ul>
+                                      <ul>
+                                        <li>1 double is 8 bytes</li>
+                                        <li>4 arithmetic ops. / (5*8 bytes)</li>
+                                      </ul>
+                                    </ul>
+                                    <ul>
+                                      <li>cache misses occur when iterating i, k, j</li>
+                                    </ul>
+                                    <p>for i, for j, for k &rarr; offers performance improvements a. hardware prefetching</p>
+                                    <ol>
+                                      <li>vectorization &rarr; involves unit stride access</li>
+                                    </ol>
+                                    <p></p>
+                                    <p><strong>Tiling</strong></p>
+                                    <ul>
+                                      <li>want to maximize use of data currently in cache before replacing it</li>
+                                    </ul>
+                                    <ul>
+                                      <li>divide data space into logical blocks</li>
+                                    </ul>
+                                    <ul>
+                                      <li>optimal tile size is based on size of caches</li>
+                                    </ul>
+                                    <ul>
+                                      <li>tiling is worse than loop permutation because with more loops there is more overhead for the program to keep track of, OR communication cost becomes higher than computation cost</li>
+                                    </ul>
+                                    <p><strong>syr2k</strong></p>
+                                    <ol>
+                                      <li>Naive</li>
+                                    </ol>
+                                    <ol>
+                                      <li>Loop-permuted</li>
+                                    </ol>
+                                    <ol>
+                                      <li>Parallelization</li>
+                                    </ol>
+                                  </div>
+
+                                  <td><div id="week8" class="collapse multi-collapse8">
+                                    <p> homework</>
+                                    </td>
+                                  </div>
+
+                                  <td>
+                                    <div id="week8" class="collapse multi-collapse8">
+                                      <a href="Week8Notes.pdf">Week 8 Notes</a>
+                                    </td>
+                                  </div>
+                                </tr>
+
+
+
+
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
                       </div>
-
-                      <td>
-                          <div id="week6" class="collapse multi-collapse6">
-                        <a href="https://i.imgur.com/1eaCpEg.jpg">Picture of What we talked about today</a> </td>
+                    </section>
+                    <section id="about">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-lg-8 mx-auto">
+                            <h2>About our project</h2>
+                            <p class="lead">We will talk about our project here</p>
+                            <ul>
+                              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                              <li>Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae,</li>
+                              <li>doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</li>
+                            </ul>
+                          </div>
                         </div>
-
-                      <td><div id="week6" class="collapse multi-collapse6">
-                        <p>Task 1: Kat Moore katbrown@rams.colostate.edu<br /> Task 2: Drew Boston dboston1@rams.colostate.edu<br /> Task 3: Luke Burford lburford@rams.colostate.edu<br /> Task 4: Logan Relph relphlogan@yahoo.com<br /> Task 5: Susanna Kyler susannaK@rams.colostate.edu<br /> Task 6: Alexander Undy dudeax@rams.colostate.edu<br /> Task 7: Jess Cobb jesscobb@rams.colostate.edu<br /> Task 8: Dakota Stewart dss@rams.colostate.edu<br /> Task 9: Thomas Sciano tsciano@rams.colostate.edu<br /> Task 10: Brian Pina-Estreda pinab@rams.colostate.edu<br /> Task 11: Shihao Huang strategicfoolyou@gmail.com<br /> Task 12: Sean Thunquest sthunquest@gmail.com</p>
-                        <br>
-                        <p>90 mins: [Hands On] With a partner of your choice, install the roofline toolkit, and gather the parameters and roofline plot for (i) one of the department machines in CSB 325 (named after fish, see&nbsp;<a href="http://www.cs.colostate.edu/~info/machines" target="_blank" rel="noreferrer" data-saferedirecturl="=http://www.cs.colostate.edu/~info/machines&amp;source=gmail&amp;ust=1519316148842000&amp;usg=AFQjCNHRyPDyvwaLS9wiMly1A-H9UcKVCg">http://www.cs.colostate.edu/~<wbr />info/machines</a>). Swetha and/or Corentin will send out specific instructions later this week.<br /><br />30 mins: Go back and reread the paper [it would be best to do it after sleeping on it]. This time read up the other tasks (don&rsquo;t try to do them, though), and get a better understanding of the paper. It will prep you<span tabindex="0" data-term="goog_1034975440">&nbsp;for t</span>he discussion for Friday.</p>
-                        <br>
-                        <p><a href="https://crd.lbl.gov/departments/computer-science/PAR/research/roofline/">Roofline Toolkit Software</a></p>
-                      </td>
+                      </div>
+                    </section>
+                    <section id="roster" class="bg-light">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-lg-8 mx-auto">
+                            <h2>Roster</h2>
+                            <p class="lead">
+                              <p> Kat Moore</p>
+                              <p>Drew Boston</p>
+                              <p>Luke Burford</p>
+                              <p>Sean Thunquest </p>
+                              <p> Susanna Kyler</p>
+                              <p>Alexander Undy</p>
+                              <p>Jess Cobb</p>
+                              <p> Logan Relph</p>
+                              <p> Shihao Huang</p>
+                              <p> Thomas Sciano</p>
+                            </p>
+                          </div>
                         </div>
-
-                      <td>
-                        <div id="week6" class="collapse multi-collapse6">
-                          <a href="RooflineCACM2009.pdf">Roofline: An Insightful Visual Performance Model for Multicore Architectures</a>
-                        </td>
+                      </div>
+                    </section>
+                    <section id="github">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-lg-8 mx-auto">
+                            <h2>Github Stuff</h2>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing
+                              elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto!
+                              Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+                            </div>
+                          </div>
                         </div>
-                    </tr>
-                    <!-- <tr>
-                      <th scope="row">7</th>
-                      <td>Hi week 7</td>
-                      <td>Heres an example of what we talked about today, lets just make this a long sentence so we can get a grasp of how the table will wor</td>
-                      <td>Homework 7</td>
-                      <td>reading list 7</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">8</th>
-                      <td>lets make this longer to test the list
-                        <li>lets test a list</li>
-                        <li>lets test a list</li>
-                        <li>lets test a list</li>
-                      </td>
-                      <td>Heres an example of what we talked about today, lets just make this a long sentence so we can get a grasp of how the table will wor</td>
-                      <td>Homework 8</td>
-                      <td>reading list 8</td>
-                    </tr> -->
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="about">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <h2>About our project</h2>
-                <p class="lead">We will talk about our project here</p>
-                <ul>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                  <li>Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae,</li>
-                  <li>doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="roster" class="bg-light">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <h2>Roster</h2>
-                <p class="lead">
-                  <p> Kat Moore</p>
-                  <p>Drew Boston</p>
-                  <p>Luke Burford</p>
-                  <p>Sean Thunquest </p>
-                  <p> Susanna Kyler</p>
-                  <p>Alexander Undy</p>
-                  <p>Jess Cobb</p>
-                  <p> Logan Relph</p>
-                  <p> Shihao Huang</p>
-                  <p> Thomas Sciano</p>
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="github">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <h2>Github Stuff</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto!
-                  Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
-                </div>
-              </div>
-            </div>
-          </section>
+                      </section>
 
-          <section id="contact">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-8 mx-auto">
-                  <h2>Contact</h2>
-                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto!
-                    Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
-                  </div>
-                </div>
-              </div>
-            </section>
+                      <section id="contact">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                              <h2>Contact</h2>
+                              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto!
+                                Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
 
-            <!-- Footer -->
-            <footer class="py-5 bg-dark">
-              <div class="container">
-                <p class="m-0 text-center text-white">Copyright &copy; CSU 2018</p>
-              </div>
-              <!-- /.container -->
-            </footer>
+                        <!-- Footer -->
+                        <footer class="py-5 bg-dark">
+                          <div class="container">
+                            <p class="m-0 text-center text-white">Copyright &copy; CSU 2018</p>
+                          </div>
+                          <!-- /.container -->
+                        </footer>
 
-            <!-- Bootstrap core JavaScript -->
-            <script src="vendor/jquery/jquery.min.js"></script>
-            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                        <!-- Bootstrap core JavaScript -->
+                        <script src="vendor/jquery/jquery.min.js"></script>
+                        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-            <!-- Plugin JavaScript -->
-            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+                        <!-- Plugin JavaScript -->
+                        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-            <!-- Custom JavaScript for this theme -->
-            <script src="js/scrolling-nav.js"></script>
+                        <!-- Custom JavaScript for this theme -->
+                        <script src="js/scrolling-nav.js"></script>
 
-          </body>
+                      </body>
 
-          </html>
+                      </html>

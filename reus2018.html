@@ -64,7 +64,8 @@
 </header> -->
 
 <section id="schedule">
-  <div class="container">
+  <div class="card">
+  <div class= "card-body">
     <div class="table-responsive">
       <table class="table table-bordered">
         <div class="row">
@@ -493,7 +494,7 @@
                                   </div>
 
                                   <td><div id="week8" class="collapse multi-collapse8">
-                                    <p> homework</>
+                                    <p> homework</p>
                                     </td>
                                   </div>
 
@@ -504,12 +505,98 @@
                                   </div>
                                 </tr>
 
+                            <tr>
+                            <tr class="table-active">
+                              <th scope="row">9</th>
 
+                              <td><button type="button" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" data-target=".multi-collapse9" aria-controls="week9">Week 9</button>
+                                <div id="week9" class="collapse multi-collapse9"></td>
+                                </div>
 
+                                <td>
+                                  <div id="week9" class="collapse multi-collapse9">
+                             <p>Problem to be solved: Triangular matrix multiplication (TMM)</p>
+<p>Four problems we can be working on in Triangular matrix multiplication</p>
+<ul>
+<img src="https://i.imgur.com/h1hblYG.png" alt="cube" class="GeneratedImage">
+<li>GPU, CPU, Triangular Matrix Multiplication, and Size</li>
+</ul>
+<p></p>
+<p>Microbenchmarks - Develop benchmarks that &ldquo;saturate&rdquo; various hardware resources</p>
+<ul>
+<li>Latency of Bandwidth to each memory hierarchy ( CPU &amp; GPU)</li>
+<li>operation throughput (CPU &amp; GPU)</li>
+<li>bank conflicts (GPU)</li>
+</ul>
+<p>modify your code so that one of these resources are saturated</p>
+<p><strong>Self organize into 5 potential projects</strong></p>
+<ul>
+<li>microbenchmarks</li>
+<li>4 axis on cube</li>
+</ul>
+<p>Triangular matrix multiplication</p>
+<ul>
+<li>first look for libraries</li>
+<ul>
+<li>2 common libraries &rarr; BLAS library and MKL ( math kernel Library), so far MKL has the fastest version of matrix multiplication</li>
+</ul>
+</ul>
+<p>data type</p>
+<p>|_D_|_TR__|_MM_|</p>
+<p>D &ndash; double or S &ndash; single precision &hellip;</p>
+<p>TR &ndash; two digits like TR or GE &hellip;</p>
+<p>MM &ndash; identify the function MM is matrix multiplication , SV&hellip;</p>
+<ul>
+<li>MM gets two parameters:</li>
+<ul>
+<li>C = &alpha;C + &beta;A*B</li>
+<li>In Blas &ndash; it assumes only one of the matrices is triangular</li>
+<ul>
+<li>this means that the number of iterations will be ( (1/2)*n^3) and therefore n3 operations</li>
+<li>so what happens when you multiply two upper right hand triangular matrices ?</li>
+<ul>
+<li>the number of iterations will be &Sigma;jk=I Aik*Bkj</li>
+<li>so in resulting c matrix, the diagonal is when there is only one term left and that is the earliest case when there is a non zero value in the result ,</li>
+<li>therefore you only have to compute half of the output values</li>
+<li>so ask yourself how many iterations are there? -&gt; less than &frac12; n^3</li>
+<ul>
+<li>this is why we need to develop and optimize our own libraries</li>
+</ul>
+</ul>
+<li>the MKL delivers a number close to 80% of theoretical machine peak</li>
+<ul>
+<li>TRMM &ndash; this does a bunch of redundant calculations</li>
+<li>so we can do better</li>
+</ul>
+</ul>
+</ul>
+</ul>
+<p><strong>HW FIGURE OUT TOTAL COMPLEXITY of triangular matrix computation</strong></p>
+<p>(also think about what happens when you multiply two lower triangle matrices (not hw))</p>
+<p><strong>Make sure you have your github set up </strong></p>
+<p>we are targeting 2k sized matrices , in normal range for both normal GPU and normal CPU</p>
+<p>CUBLAS is a library that implements BLAS operations in CUDA</p>
+<p>There is a reference guide available here for BLAS routines. : <a href="http://www.netlib.org/blas/blasqr.pdf">http://www.netlib.org/blas/blasqr.pdf</a></p>
+
+                                  </div>
+
+                                  <td><div id="week9" class="collapse multi-collapse9">
+                                    <p> </p>
+                                    </td>
+                                  </div>
+
+                                  <td>
+                                    <div id="week9" class="collapse multi-collapse9">
+                                      <a href="week9notes.pdf">Week 9 Notes</a>
+                                    </td>
+                                  </div>
+                                </tr>
 
                               </tbody>
                             </table>
                           </div>
+                          </div>
+                        
                         </div>
                       </div>
                     </section>
